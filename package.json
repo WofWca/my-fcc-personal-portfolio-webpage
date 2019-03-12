@@ -4,7 +4,8 @@
   "description": "My freeCodeCamp Personal Portfolio Webpage project",
   "main": "index.html",
   "scripts": {
-    "build": "rm dist/ -rf && mkdir dist && cp src/index.html dist/index.html && sass src/:dist/ --style compressed"
+    "build": "rm dist/ -rf && mkdir dist && cp src/index.html dist/index.html && sass src/:dist/ --style compressed",
+    "deploy-gh-pages": "gh-pages -d dist"
   },
   "repository": "https://github.com/WofWca/my-fcc-personal-portfolio-webpage.git",
   "author": "WofWca",
