@@ -2,6 +2,7 @@ $primary-color: #fb5;
 $break-small: 600px;
 body {
   margin: 0;
+  background-color: #eee;
 }
 #welcome-section {
   background-color: $primary-color;
@@ -24,6 +25,21 @@ body {
       a {
         text-decoration: none;
       }
+    }
+  }
+}
+#projects {
+  display: flex;
+  justify-content: space-around;
+  .project-tile {
+    flex-basis: 280px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    * {
+      background-color: white;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
