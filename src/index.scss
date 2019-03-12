@@ -67,3 +67,31 @@ a:visited {
     }
   }
 }
+#links {
+  background-color: $primary-color;
+  padding: 20px;
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .list {
+    justify-content: center;
+    display: flex;
+    a {
+      margin: 15px;
+      .plate {
+        border-radius: 50%;
+        background-color: #eee;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+  }
+}
