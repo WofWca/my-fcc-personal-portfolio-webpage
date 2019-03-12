@@ -4,7 +4,7 @@
   "description": "My freeCodeCamp Personal Portfolio Webpage project",
   "main": "index.html",
   "scripts": {
-    "build": "rm dist/ -rf && mkdir dist && cp src/index.html dist/index.html && yarn node-sass src/ -o dist/ --output-style compressed",
+    "build": "rm dist/ -rf && mkdir dist && cp public/* dist/ -r && yarn node-sass src/ -o dist/ --output-style compressed",
     "deploy-gh-pages": "gh-pages -d dist",
     "sass-watch": "node-sass src/ -o dist/ -w"
   },
