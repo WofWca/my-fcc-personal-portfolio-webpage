@@ -1,0 +1,12 @@
+{
+  "name": "my-fcc-personal-portfolio-webpage",
+  "version": "1.0.0",
+  "description": "My freeCodeCamp Personal Portfolio Webpage project",
+  "main": "index.html",
+  "scripts": {
+    "build": "rm dist/ -rf && mkdir dist && cp src/index.html dist/index.html && sass src/:dist/ --style compressed"
+  },
+  "repository": "https://github.com/WofWca/my-fcc-personal-portfolio-webpage.git",
+  "author": "WofWca",
+  "license": "MIT"
+}
