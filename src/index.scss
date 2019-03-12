@@ -1,0 +1,17 @@
+$primary-color: #fb5;
+body {
+  margin: 0;
+}
+#welcome-section {
+  background-color: $primary-color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
