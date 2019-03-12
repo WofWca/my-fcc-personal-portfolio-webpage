@@ -1,8 +1,16 @@
 $primary-color: #fb5;
+$primary-variant-color: scale-color($color: $primary-color, $saturation: 0%, $lightness: -30%);
 $break-small: 600px;
 body {
   margin: 0;
   background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: #2980b9;
+}
+a:visited {
+  color: #9b59b6;
 }
 #welcome-section {
   background-color: $primary-color;
@@ -15,6 +23,12 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  a {
+    color: black;
+  }
+  a:active {
+    text-decoration-line: underline;
+  }
   ul {
     display: flex;
     list-style: none;
@@ -22,24 +36,33 @@ body {
     margin: 0;
     li {
       margin: 15px;
-      a {
-        text-decoration: none;
-      }
     }
   }
 }
 #projects {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
   .project-tile {
     flex-basis: 280px;
     display: flex;
     text-align: center;
     flex-direction: column;
-    * {
-      background-color: white;
-      margin-top: 5px;
-      margin-bottom: 5px;
+    margin: 10px 5px;;
+    > * {
+      background-color: black;
+      color: white;
+      margin: 3px 0px;
+    }
+    img {
+      border: 2px solid black;
+    }
+    h3, a {
+      padding: 5px;
+    }
+    a:hover {
+      background-color: $primary-variant-color;
     }
   }
 }
