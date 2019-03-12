@@ -8,5 +8,8 @@
   },
   "repository": "https://github.com/WofWca/my-fcc-personal-portfolio-webpage.git",
   "author": "WofWca",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
