@@ -66,21 +66,20 @@ a:visited {
     > .live-link { grid-area: live-link }
     > .source-code-link { grid-area: source-code-link }
     grid-template-areas:
-      "header"
-      "image"
-      "live-link"
-      "source-code-link";
-    $image-size: 280px;
-    grid-template-rows: auto $image-size auto auto;
-    grid-template-columns: $image-size;
+      "header header"
+      "image live-link"
+      "image source-code-link";
+    $image-size: 500px;
+    grid-template-rows: auto repeat(2, calc(($image-size - $gap)/2));
+    grid-template-columns: $image-size 80px;
     @media (max-width: 768px) {
       grid-template-areas:
-        "header header"
-        "image live-link"
-        "image source-code-link";
-      $image-size: 500px;
-      grid-template-rows: auto repeat(2, calc(($image-size - $gap)/2));
-      grid-template-columns: $image-size 80px;
+        "header"
+        "image"
+        "live-link"
+        "source-code-link";
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: minmax(100%, 500px);
     }
     text-align: center;
     margin: 20px 5px;
