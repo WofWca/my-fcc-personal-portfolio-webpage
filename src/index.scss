@@ -32,7 +32,7 @@ a:visited {
   }
   ul {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     background-color: $primary-color;
     list-style: none;
     padding: 0;
